@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382BB037FA85C0B8305C89FA /* Pods_SearchUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FAC9412B4F85486B9404A2 /* Pods_SearchUI.framework */; };
+		A3C2F37B20E5153A00C952F9 /* ImageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2F37A20E5153A00C952F9 /* ImageItemView.swift */; };
+		A3C2F37D20E526AB00C952F9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2F37C20E526AB00C952F9 /* UIColor.swift */; };
+		A3C2F37F20E63E2400C952F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2F37E20E63E2400C952F9 /* Model.swift */; };
 		A3EAC5B220E2437E00A45360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5B120E2437E00A45360 /* AppDelegate.swift */; };
 		A3EAC5B420E2437E00A45360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5B320E2437E00A45360 /* ViewController.swift */; };
-		A3EAC5B720E2437E00A45360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EAC5B520E2437E00A45360 /* Main.storyboard */; };
 		A3EAC5B920E2438000A45360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EAC5B820E2438000A45360 /* Assets.xcassets */; };
 		A3EAC5BC20E2438000A45360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EAC5BA20E2438000A45360 /* LaunchScreen.storyboard */; };
+		A3EAC5C420E24B7300A45360 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5C320E24B7200A45360 /* View.swift */; };
+		A3EAC5C620E24C1C00A45360 /* SearchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5C520E24C1C00A45360 /* SearchHomeView.swift */; };
+		A3EAC5CB20E24CA900A45360 /* SearchAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5CA20E24CA900A45360 /* SearchAnimator.swift */; };
+		A3EAC5CD20E24D4C00A45360 /* WobbleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5CC20E24D4C00A45360 /* WobbleAnimator.swift */; };
+		A3EAC5CF20E24E9400A45360 /* CG+SearchUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAC5CE20E24E9400A45360 /* CG+SearchUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57FAC9412B4F85486B9404A2 /* Pods_SearchUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1B154132686F216D8F3F00 /* Pods-SearchUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchUI/Pods-SearchUI.release.xcconfig"; sourceTree = "<group>"; };
+		A3C2F37A20E5153A00C952F9 /* ImageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItemView.swift; sourceTree = "<group>"; };
+		A3C2F37C20E526AB00C952F9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A3C2F37E20E63E2400C952F9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A3EAC5AE20E2437E00A45360 /* SearchUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EAC5B120E2437E00A45360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3EAC5B320E2437E00A45360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A3EAC5B620E2437E00A45360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3EAC5B820E2438000A45360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3EAC5BB20E2438000A45360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3EAC5BD20E2438000A45360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EAC5C320E24B7200A45360 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A3EAC5C520E24C1C00A45360 /* SearchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeView.swift; sourceTree = "<group>"; };
+		A3EAC5CA20E24CA900A45360 /* SearchAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAnimator.swift; sourceTree = "<group>"; };
+		A3EAC5CC20E24D4C00A45360 /* WobbleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WobbleAnimator.swift; sourceTree = "<group>"; };
+		A3EAC5CE20E24E9400A45360 /* CG+SearchUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG+SearchUI.swift"; sourceTree = "<group>"; };
+		F2FD8C4D95EBA21C16916A2B /* Pods-SearchUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchUI/Pods-SearchUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				382BB037FA85C0B8305C89FA /* Pods_SearchUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC17C5F7B4AEDF0604FFA36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2FD8C4D95EBA21C16916A2B /* Pods-SearchUI.debug.xcconfig */,
+				6F1B154132686F216D8F3F00 /* Pods-SearchUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AE52C992D177B1D25D87173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57FAC9412B4F85486B9404A2 /* Pods_SearchUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3EAC5A520E2437E00A45360 = {
 			isa = PBXGroup;
 			children = (
 				A3EAC5B020E2437E00A45360 /* SearchUI */,
 				A3EAC5AF20E2437E00A45360 /* Products */,
+				4AC17C5F7B4AEDF0604FFA36 /* Pods */,
+				9AE52C992D177B1D25D87173 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +92,29 @@
 		A3EAC5B020E2437E00A45360 /* SearchUI */ = {
 			isa = PBXGroup;
 			children = (
+				A3EAC5C520E24C1C00A45360 /* SearchHomeView.swift */,
+				A3C2F37E20E63E2400C952F9 /* Model.swift */,
+				A3C2F37A20E5153A00C952F9 /* ImageItemView.swift */,
+				A3EAC5CA20E24CA900A45360 /* SearchAnimator.swift */,
+				A3EAC5CC20E24D4C00A45360 /* WobbleAnimator.swift */,
+				A3EAC5C720E24C2300A45360 /* Supporting Files */,
+			);
+			path = SearchUI;
+			sourceTree = "<group>";
+		};
+		A3EAC5C720E24C2300A45360 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				A3EAC5B120E2437E00A45360 /* AppDelegate.swift */,
 				A3EAC5B320E2437E00A45360 /* ViewController.swift */,
-				A3EAC5B520E2437E00A45360 /* Main.storyboard */,
+				A3EAC5C320E24B7200A45360 /* View.swift */,
+				A3C2F37C20E526AB00C952F9 /* UIColor.swift */,
+				A3EAC5CE20E24E9400A45360 /* CG+SearchUI.swift */,
 				A3EAC5B820E2438000A45360 /* Assets.xcassets */,
 				A3EAC5BA20E2438000A45360 /* LaunchScreen.storyboard */,
 				A3EAC5BD20E2438000A45360 /* Info.plist */,
 			);
-			path = SearchUI;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EAC5C020E2438000A45360 /* Build configuration list for PBXNativeTarget "SearchUI" */;
 			buildPhases = (
+				1D7144764FF9ED72628014A2 /* [CP] Check Pods Manifest.lock */,
 				A3EAC5AA20E2437E00A45360 /* Sources */,
 				A3EAC5AB20E2437E00A45360 /* Frameworks */,
 				A3EAC5AC20E2437E00A45360 /* Resources */,
+				CDBDB6140B743CAA827D6C13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +179,63 @@
 			files = (
 				A3EAC5BC20E2438000A45360 /* LaunchScreen.storyboard in Resources */,
 				A3EAC5B920E2438000A45360 /* Assets.xcassets in Resources */,
-				A3EAC5B720E2437E00A45360 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D7144764FF9ED72628014A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDBDB6140B743CAA827D6C13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SearchUI/Pods-SearchUI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/YetAnotherAnimationLibrary/YetAnotherAnimationLibrary.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YetAnotherAnimationLibrary.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchUI/Pods-SearchUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3EAC5AA20E2437E00A45360 /* Sources */ = {
@@ -136,21 +243,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3EAC5B420E2437E00A45360 /* ViewController.swift in Sources */,
+				A3EAC5C620E24C1C00A45360 /* SearchHomeView.swift in Sources */,
 				A3EAC5B220E2437E00A45360 /* AppDelegate.swift in Sources */,
+				A3EAC5CD20E24D4C00A45360 /* WobbleAnimator.swift in Sources */,
+				A3EAC5CF20E24E9400A45360 /* CG+SearchUI.swift in Sources */,
+				A3C2F37F20E63E2400C952F9 /* Model.swift in Sources */,
+				A3C2F37D20E526AB00C952F9 /* UIColor.swift in Sources */,
+				A3EAC5CB20E24CA900A45360 /* SearchAnimator.swift in Sources */,
+				A3EAC5C420E24B7300A45360 /* View.swift in Sources */,
+				A3C2F37B20E5153A00C952F9 /* ImageItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3EAC5B520E2437E00A45360 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A3EAC5B620E2437E00A45360 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A3EAC5BA20E2438000A45360 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,10 +385,11 @@
 		};
 		A3EAC5C120E2438000A45360 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FD8C4D95EBA21C16916A2B /* Pods-SearchUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SearchUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +403,11 @@
 		};
 		A3EAC5C220E2438000A45360 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1B154132686F216D8F3F00 /* Pods-SearchUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SearchUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SearchUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

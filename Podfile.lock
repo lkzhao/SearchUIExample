@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (5.0.0.beta.1)
+  - CollectionKit (2.0.1)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - SwiftIcons (2.0.1)
+  - Then (2.3.0)
+  - YetAnotherAnimationLibrary (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `alamofire5`)
+  - CollectionKit
+  - PINRemoteImage/Core (= 3.0.0-beta.13)
+  - PINRemoteImage/PINCache (= 3.0.0-beta.13)
+  - SwiftIcons
+  - Then
+  - YetAnotherAnimationLibrary
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CollectionKit
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - SwiftIcons
+    - Then
+    - YetAnotherAnimationLibrary
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: alamofire5
+    :git: https://github.com/Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 32e38a4db9f96a1391c6727044d29676dd0322a2
+    :git: https://github.com/Alamofire/Alamofire.git
+
+SPEC CHECKSUMS:
+  Alamofire: 8dc618ab9e6a26d9d77559e4c35e59e56451e69e
+  CollectionKit: c891976ede4e800e2102333df310edc06d8430f4
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  SwiftIcons: e475a56ae2c2da40672dbf16061ca5dd5cee7dbb
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+  YetAnotherAnimationLibrary: 3cb3e784cf1b4305095e0ef2c57965eb1b51b1c6
+
+PODFILE CHECKSUM: 09448b9cf54be6fb3e5b00ba224b382d7caf6d56
+
+COCOAPODS: 1.5.3

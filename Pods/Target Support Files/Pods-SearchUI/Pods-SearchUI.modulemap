@@ -1,0 +1,6 @@
+framework module Pods_SearchUI {
+  umbrella header "Pods-SearchUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
