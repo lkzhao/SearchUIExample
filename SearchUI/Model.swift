@@ -6,7 +6,7 @@
 //  Copyright © 2018 Luke Zhao. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct UnsplashResponse<Data: Codable>: Codable {
   let total: Int

@@ -9,9 +9,9 @@
 import UIKit
 import PINRemoteImage
 
-class DefaultShadowView: View {
-  override func viewDidLoad() {
-    super.viewDidLoad()
+class DefaultShadowView: UIView {
+  override init(frame: CGRect) {
+    super.init(frame: frame)
 
     backgroundColor = .white
     layer.shadowColor = UIColor.black.cgColor
@@ -20,25 +20,37 @@ class DefaultShadowView: View {
     layer.shadowOpacity = 0.1
     layer.cornerRadius = 4
   }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 }
 
 class ImageItemView: DefaultShadowView {
-  let imageView = UIImageView().then {
-    $0.contentMode = .scaleAspectFill
-    $0.clipsToBounds = true
-    $0.layer.cornerRadius = 4
-    $0.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-  }
+  let imageView: UIImageView = {
+    let imageView = UIImageView()
+    imageView.contentMode = .scaleAspectFill
+    imageView.clipsToBounds = true
+    imageView.layer.cornerRadius = 4
+    imageView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    return imageView
+  }()
 
-  let titleLabel = UILabel().then {
-    $0.numberOfLines = 1
-    $0.font = .systemFont(ofSize: 14)
-  }
+  let titleLabel: UILabel = {
+    let titleLabel = UILabel()
+    titleLabel.numberOfLines = 1
+    titleLabel.font = .systemFont(ofSize: 14)
+    return titleLabel
+  }()
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  override init(frame: CGRect) {
+    super.init(frame: frame)
     addSubview(imageView)
     addSubview(titleLabel)
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
   }
 
   func populate(image data: UnsplashImage) {

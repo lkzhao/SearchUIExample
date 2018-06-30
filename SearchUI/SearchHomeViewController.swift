@@ -1,5 +1,5 @@
 //
-//  SearchHomeView.swift
+//  SearchHomeViewController.swift
 //  SearchUI
 //
 //  Created by Luke Zhao on 2018-06-26.
@@ -9,20 +9,21 @@
 import UIKit
 import Alamofire
 import CollectionKit
-import Then
 import SwiftIcons
 
 let clientId = "472a470e3fb05a2079d13f77cd9557354d0f0901bce20089a1ad59569558b1dd"
 
-class SearchHomeView: View, RootView {
+class SearchHomeViewController: UIViewController {
 
   let collectionView = CollectionView()
 
-  let searchField = UITextField().then {
-    $0.setLeftViewIcon(icon: .ionicons(.iosSearch))
-    $0.tintColor = .darkGray
-    $0.font = .systemFont(ofSize: 18)
-  }
+  let searchField: UITextField = {
+    let textField = UITextField()
+    textField.setLeftViewIcon(icon: .ionicons(.iosSearch))
+    textField.tintColor = .darkGray
+    textField.font = .systemFont(ofSize: 18)
+    return textField
+  }()
 
   let searchBackground = DefaultShadowView()
 
@@ -33,7 +34,7 @@ class SearchHomeView: View, RootView {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    backgroundColor = UIColor(hexString: "EEEEEE")
+    view.backgroundColor = UIColor(hexString: "EEEEEE")
     collectionView.contentInsetAdjustmentBehavior = .never
     collectionView.contentInset = UIEdgeInsets(top: 240, left: 20, bottom: 40, right: 20)
     collectionView.delegate = self
@@ -41,9 +42,9 @@ class SearchHomeView: View, RootView {
 
     searchField.delegate = self
 
-    addSubview(collectionView)
-    addSubview(searchBackground)
-    addSubview(searchField)
+    view.addSubview(collectionView)
+    view.addSubview(searchBackground)
+    view.addSubview(searchField)
 
     let provider = BasicProvider(
       dataSource: dataSource,
@@ -75,10 +76,14 @@ class SearchHomeView: View, RootView {
                   height: start.height + progress * (end.height - start.height))
   }
 
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    collectionView.frame = bounds
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    collectionView.frame = view.bounds
+    layoutSearchbar()
+  }
 
+  func layoutSearchbar() {
+    let bounds = view.bounds
     let progress = tween(offset: -collectionView.contentOffset.y, start: 240, end: 0)
     let clamped = min(1, max(0, progress))
     let fieldRect = mix(progress: clamped,
@@ -116,7 +121,7 @@ class SearchHomeView: View, RootView {
   }
 }
 
-extension SearchHomeView: UITextFieldDelegate {
+extension SearchHomeViewController: UITextFieldDelegate {
   func textFieldDidEndEditing(_ textField: UITextField) {
     search(text: textField.text ?? "")
   }
@@ -127,8 +132,8 @@ extension SearchHomeView: UITextFieldDelegate {
   }
 }
 
-extension SearchHomeView: UIScrollViewDelegate {
+extension SearchHomeViewController: UIScrollViewDelegate {
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    setNeedsLayout()
+    layoutSearchbar()
   }
 }
